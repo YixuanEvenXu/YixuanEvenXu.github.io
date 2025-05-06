@@ -18,10 +18,10 @@
   url: https://aaai.org/conference/aaai/aaai-24/
   color: Orchid
 
-"WWW 2024":
-  url: https://www2024.thewebconf.org/
-  color: Orange
-
 "AAAI 2025":
   url: https://aaai.org/conference/aaai/aaai-25/
   color: Orchid
+
+"WWW 2024":
+  url: https://www2024.thewebconf.org/
+  color: Orange
