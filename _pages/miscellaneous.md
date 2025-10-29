@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: page
 permalink: /miscellaneous/
 title: Miscellaneous
@@ -43,4 +43,4 @@ I am a big fan of **Doctor Who** series. My favourite episode is `S09E11 Heaven 
     <div class="col-sm-6 mt-3 mt-md-0">
         {% include figure.html path="assets/img/miscellaneous/dw4.JPG" title="Doctor Who" class="img-fluid rounded z-depth-1" %}
     </div>
-</div>
+</div> -->
