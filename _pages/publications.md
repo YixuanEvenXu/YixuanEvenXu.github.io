@@ -10,8 +10,6 @@ nav_order: 1
 <!-- _pages/publications.md -->
 <div class="publications">
 
-The asterisks mean that authors contributed equally to the work.
-
 {%- for y in page.years %}
   <h2 class="year">{{y}}</h2>
   {% bibliography -f papers -q @*[year={{y}}]* %}
