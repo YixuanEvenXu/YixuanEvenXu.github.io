@@ -18,6 +18,10 @@
   url: https://neurips.cc/Conferences/2025
   color: "#FA6868"
 
+"ICML 2026":
+  url: https://icml.cc/Conferences/2026
+  color: "#FFA239"
+
 "AAAI 2024":
   url: https://aaai.org/conference/aaai/aaai-24/
   color: "#A594F9"
