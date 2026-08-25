@@ -7,13 +7,22 @@ profile:
   align: right
   image: profile.jpg
   image_circular: false # crops the image to make it circular
-  address: >
+  more_info: >
     <p>GHC 7203, Pittsburgh, PA 15213</p>
     <p>yixuanx [at] andrew.cmu.edu</p>
 
-news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: true # includes social icons at the bottom of the page
+
+announcements:
+  enabled: true
+  scrollable: false
+  limit:
+
+latest_posts:
+  enabled: false
+  scrollable: false
+  limit: 3
 ---
 
 I am Yixuan (Even) Xu (徐翊轩), a second-year Ph.D. student in Computer Science at [CSD](https://csd.cmu.edu/), [Carnegie Mellon University](https://www.cmu.edu/), where I am fortunate to be co-advised by [Professor Zico Kolter](https://zicokolter.com/) and [Professor Fei Fang](https://feifang.info/). Prior to that, I completed my Bachelor of Engineering in Computer Science and Technology at [Yao Class](https://iiis.tsinghua.edu.cn/en/), [Tsinghua University](https://www.tsinghua.edu.cn/en/).

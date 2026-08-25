@@ -1,0 +1,13 @@
+# Social links are displayed in this order by jekyll-socials.
+email: yixuanx@andrew.cmu.edu
+github_username: YixuanEvenXu
+x_username: YixuanEvenXu
+linkedin_username: yixuan-xu-57584a268
+scholar_userid: viloxoAAAAAJ
+orcid_id: 0009-0003-9360-753X
+dblp_url: https://dblp.org/pid/349/7695.html
+cv_pdf: /assets/pdf/CV.pdf
+wechat:
+  logo: fa-brands fa-weixin
+  title: WeChat QR code
+  url: /assets/img/wechat.jpg
