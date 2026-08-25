@@ -57,8 +57,10 @@
 
         abbr {
           align-items: center;
-          background-color: var(--global-theme-color);
+          background-color: var(--venue-bg-light, var(--global-theme-color));
+          border: 1px solid var(--venue-border-light, var(--global-theme-color));
           box-sizing: border-box;
+          color: var(--venue-text-light, white) !important;
           display: inline-flex;
           justify-content: center;
           margin-bottom: 0.5rem;
@@ -70,10 +72,8 @@
           padding-right: 1rem;
           text-align: center;
           white-space: nowrap;
-          color: var(--global-card-bg-color) !important;
-
           a {
-            color: white;
+            color: inherit !important;
 
             &:hover {
               text-decoration: none;
@@ -81,7 +81,7 @@
           }
 
           > div {
-            color: white;
+            color: inherit !important;
           }
         }
 
@@ -204,6 +204,12 @@
       border-color: var(--global-highlight-color);
     }
   }
+}
+
+html[data-theme="dark"] .publications ol.bibliography li .abbr abbr {
+  background-color: var(--venue-bg-dark, var(--venue-bg-light, var(--global-theme-color)));
+  border-color: var(--venue-border-dark, var(--venue-border-light, var(--global-theme-color)));
+  color: var(--venue-text-dark, var(--venue-text-light, white)) !important;
 }
 
 @media (min-width: 576px) {

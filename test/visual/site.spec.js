@@ -12,6 +12,19 @@ async function expectNoHorizontalOverflow(page) {
   expect(dimensions.content).toBeLessThanOrEqual(dimensions.viewport + 1);
 }
 
+function contrastRatio(foreground, background) {
+  const luminance = (color) => {
+    const channels = color
+      .match(/[\d.]+/g)
+      .slice(0, 3)
+      .map((channel) => Number(channel) / 255)
+      .map((channel) => (channel <= 0.04045 ? channel / 12.92 : ((channel + 0.055) / 1.055) ** 2.4));
+    return 0.2126 * channels[0] + 0.7152 * channels[1] + 0.0722 * channels[2];
+  };
+  const values = [luminance(foreground), luminance(background)].sort((a, b) => b - a);
+  return (values[0] + 0.05) / (values[1] + 0.05);
+}
+
 test("homepage layout and navigation", async ({ page }, testInfo) => {
   await page.goto("/", { waitUntil: "domcontentloaded" });
 
@@ -97,7 +110,10 @@ test("publication badges and dark mode", async ({ page }, testInfo) => {
   const badges = page.locator("ol.bibliography .abbr abbr");
   await expect(badges.first()).toBeVisible();
   expect(await badges.count()).toBeGreaterThan(10);
-  await expect(page.locator("abbr", { hasText: "Workshop" }).first()).toHaveCSS("color", "rgb(255, 255, 255)");
+  const workshopBadge = page.locator("abbr", { hasText: "Workshop" }).first();
+  await expect(workshopBadge).toHaveCSS("background-color", "rgb(222, 247, 240)");
+  await expect(workshopBadge).toHaveCSS("color", "rgb(44, 119, 102)");
+  await expect(workshopBadge).toHaveCSS("border-top-color", "rgb(183, 235, 221)");
   await expect(page.locator("h2.bibliography").first()).toHaveCSS("margin-bottom", "16px");
   await expect(page.getByText("Talk invited at OpenAI, Google and Simons Institute", { exact: true })).toHaveCSS("color", "rgb(0, 0, 0)");
 
@@ -123,6 +139,7 @@ test("publication badges and dark mode", async ({ page }, testInfo) => {
       const box = element.getBoundingClientRect();
       return {
         background: getComputedStyle(element).backgroundColor,
+        foreground: getComputedStyle(element.querySelector("a, div") ?? element).color,
         height: box.height,
         width: box.width,
       };
@@ -131,6 +148,11 @@ test("publication badges and dark mode", async ({ page }, testInfo) => {
   expect(new Set(lightBadges.map(({ width }) => Math.round(width))).size).toBe(1);
   expect(lightBadges[0].width).toBeCloseTo(120, 0);
   expect(lightBadges.every(({ height }) => height >= 21)).toBe(true);
+  expect(lightBadges.every(({ foreground, background }) => contrastRatio(foreground, background) >= 4.5)).toBe(true);
+  const lightNeuripsBackgrounds = await badges.evaluateAll((elements) =>
+    elements.filter((element) => element.textContent.trim().startsWith("NeurIPS")).map((element) => getComputedStyle(element).backgroundColor)
+  );
+  expect(new Set(lightNeuripsBackgrounds).size).toBe(1);
 
   const themeToggle = page.locator("#light-toggle");
   if (!(await themeToggle.isVisible())) {
@@ -139,8 +161,17 @@ test("publication badges and dark mode", async ({ page }, testInfo) => {
   }
   await themeToggle.click();
   await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
-  const darkBackgrounds = await badges.evaluateAll((elements) => elements.map((element) => getComputedStyle(element).backgroundColor));
-  expect(darkBackgrounds).toEqual(lightBadges.map(({ background }) => background));
+  await expect(workshopBadge).toHaveCSS("background-color", "rgb(36, 61, 55)");
+  await expect(workshopBadge).toHaveCSS("color", "rgb(194, 228, 220)");
+  await expect(workshopBadge).toHaveCSS("border-top-color", "rgb(61, 103, 93)");
+  const darkBadges = await badges.evaluateAll((elements) =>
+    elements.map((element) => ({
+      background: getComputedStyle(element).backgroundColor,
+      foreground: getComputedStyle(element.querySelector("a, div") ?? element).color,
+    }))
+  );
+  expect(darkBadges.map(({ background }) => background)).not.toEqual(lightBadges.map(({ background }) => background));
+  expect(darkBadges.every(({ foreground, background }) => contrastRatio(foreground, background) >= 4.5)).toBe(true);
   await expectNoHorizontalOverflow(page);
 
   await page.screenshot({ path: `/tmp/al-folio-publications-${testInfo.project.name}.png`, fullPage: true });
