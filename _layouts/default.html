@@ -4,7 +4,11 @@
   <!-- Head -->
   <head>
   {%- if page.redirect -%}
-    <meta http-equiv="refresh" content="3; url={{ site.baseurl }}/" />
+    {%- assign redirect_url = page.redirect -%}
+    {%- if redirect_url == true -%}
+      {%- assign redirect_url = '/' -%}
+    {%- endif -%}
+    <meta http-equiv="refresh" content="3; url={{ redirect_url | relative_url }}" />
   {%- endif -%}
   {% include head.html %}
   </head>

@@ -300,6 +300,25 @@ footer.sticky-bottom {
   padding-top: 40px;
   padding-bottom: 40px;
   font-size: 0.9rem;
+
+  .container {
+    font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 768px) {
+  footer.sticky-bottom {
+    .container {
+      white-space: nowrap;
+    }
+  }
+}
+
+.news {
+  .news-table-scroll {
+    max-height: 12rem;
+    overflow-y: auto;
+  }
 }
 
 // CV
@@ -497,7 +516,7 @@ footer.sticky-bottom {
     margin-top: 0;
 
     li {
-      margin-bottom: 1rem;
+      margin-bottom: 1.35rem;
       .preview {
         width: 100%;
         min-width: 80px;
@@ -507,10 +526,17 @@ footer.sticky-bottom {
         height: 2rem;
         margin-bottom: 0.5rem;
         abbr {
-          display: inline-block;
+          align-items: center;
           background-color: var(--global-theme-color);
+          box-sizing: border-box;
+          display: inline-flex;
+          justify-content: center;
+          min-height: 1.35rem;
           padding-left: 1rem;
           padding-right: 1rem;
+          text-align: center;
+          white-space: nowrap;
+          width: 7.5rem;
           a {
             color: white;
             &:hover {

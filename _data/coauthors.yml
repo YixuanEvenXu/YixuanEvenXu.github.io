@@ -1,91 +1,117 @@
-"Tang":
-  - firstname: ["Zhihao", "Zhihao Gavin"]
-    url: http://zhihaotang.com/index.html
-
-"Zhang":
-  - firstname: ["Yuhao"]
-    url: https://jhc.sjtu.edu.cn/people/members/faculty/yuhao-zhang.html
-
-"Gravin":
-  - firstname: ["Nick", "Nikolai"]
-    url: https://logic.pdmi.ras.ru/~gravin/
-
-"Fang":
-  - firstname: ["Fei"]
-    url: https://feifang.info/
-
-"Zhou":
-  - firstname: ["Renfei"]
-    url: https://orbitingflea.github.io/
-
-"Jecmen":
-  - firstname: ["Steven"]
-    url: https://sjecmen.github.io/
-
-"Ling":
-  - firstname: ["Chun Kai"]
-    url: https://lingchunkai.github.io/
-
-"Zhang":
-  - firstname: ["Hanrui"]
-    url: https://www.andrew.cmu.edu/user/hanruiz1/
-
-"Conitzer":
-  - firstname: ["Vincent"]
-    url: https://www.cs.cmu.edu/~conitzer/
+"Bair":
+  - firstname: ["Anna"]
+    url: https://annaebair.github.io/
 
 "Cheng":
   - firstname: ["Yu"]
     url: https://cs.brown.edu/people/ycheng79/
 
+"Conitzer":
+  - firstname: ["Vincent"]
+    url: https://www.cs.cmu.edu/~conitzer/
+
+"Davies":
+  - firstname: ["Xander"]
+    url: https://xanderdavies.com/
+
+"Fang":
+  - firstname: ["Fei"]
+    url: https://feifang.info/
+
 "Feng":
   - firstname: ["Zhe"]
     url: https://zfengharvard.github.io/
 
-"Savani":
-  - firstname: ["Yash"]
-    url: https://yashsavani.com/
-
-"Kolter":
-  - firstname: ["Zico", "J. Zico"]
-    url: https://zicokolter.com/
-
-"Feng":
   - firstname: ["Zhili"]
     url: https://zhilif.github.io/
 
-"Schwarzschild":
-  - firstname: ["Avi"]
-    url: https://www.avischwarzschild.com/
-
-"Robey":
-  - firstname: ["Alexander", "Alex"]
-    url: https://arobey1.github.io/
-
-"Maimi":
-  - firstname: ["Pratyush"]
-    url: https://pratyushmaini.github.io/
+"Finzi":
+  - firstname: ["Marc"]
+    url: https://mfinzi.github.io/
 
 "Gal":
   - firstname: ["Yarin"]
     url: https://www.cs.ox.ac.uk/people/yarin.gal/website/
 
+"Goldstein":
+  - firstname: ["Tom"]
+    url: https://www.cs.umd.edu/~tomg/
+
+"Gravin":
+  - firstname: ["Nick", "Nikolai"]
+    url: https://logic.pdmi.ras.ru/~gravin/
+
+"Jecmen":
+  - firstname: ["Steven"]
+    url: https://sjecmen.github.io/
+
+"Kirchenbauer":
+  - firstname: ["John"]
+    url: https://www.cs.umd.edu/people/jkirchen
+
+"Kirk":
+  - firstname: ["Robert"]
+    url: https://robertkirk.github.io/
+
+"Kolter":
+  - firstname: ["Zico", "J. Zico"]
+    url: https://zicokolter.com/
+
 "Liang":
   - firstname: ["Jingxun"]
     url: https://sites.google.com/view/jingxun/home
 
-"Zhong":
-  - firstname: ["Ziqian"]
-    url: https://fjzzq2002.github.io/
+"Ling":
+  - firstname: ["Chun Kai"]
+    url: https://lingchunkai.github.io/
+
+"Maini":
+  - firstname: ["Pratyush"]
+    url: https://pratyushmaini.github.io/
 
 "Raghunathan":
   - firstname: ["Aditi"]
     url: https://www.cs.cmu.edu/~aditirag/
 
-"Bair":
-  - firstname: ["Anna"]
-    url: https://annaebair.github.io/
+"Robey":
+  - firstname: ["Alexander", "Alex"]
+    url: https://arobey1.github.io/
+
+"Savani":
+  - firstname: ["Yash"]
+    url: https://yashsavani.com/
+
+"Schwarzschild":
+  - firstname: ["Avi"]
+    url: https://www.avischwarzschild.com/
 
 "Sun":
   - firstname: ["Mingjie"]
     url: https://eric-mingjie.github.io/
+
+"Tang":
+  - firstname: ["Zhihao", "Zhihao Gavin"]
+    url: http://zhihaotang.com/index.html
+
+"Trockman":
+  - firstname: ["Asher"]
+    url: https://ashertrockman.com/
+
+"Wu":
+  - firstname: ["Yufei"]
+    url: https://github.com/YvonneWu10
+
+"Zhang":
+  - firstname: ["Yuhao"]
+    url: https://jhc.sjtu.edu.cn/people/members/faculty/yuhao-zhang.html
+
+  - firstname: ["Hanrui"]
+    url: https://hanruizha.github.io/
+
+"Zhong":
+  - firstname: ["Ziqian"]
+    url: https://fjzzq2002.github.io/
+
+"Zhou":
+  - firstname: ["Renfei"]
+    url: https://orbitingflea.github.io/
