@@ -6,8 +6,7 @@ title: Yixuan Even Xu # the website title (if blank, full name will be used inst
 first_name: Yixuan
 middle_name: Even
 last_name: Xu
-contact_note: >
-  You can also reach me via WeChat: cz_xuyixuan.
+contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   The academic profile of Yixuan Even Xu.
 footer_text: >
@@ -96,9 +95,9 @@ al_folio:
 
 navbar_fixed: true
 footer_fixed: false
-search_enabled: true
-socials_in_search: true
-posts_in_search: true
+search_enabled: false
+socials_in_search: false
+posts_in_search: false
 bib_search: true
 
 # Dimensions
@@ -279,7 +278,6 @@ plugins:
   - al_citations
   - al_ext_posts
   - al_img_tools
-  - al_search
   - al_charts
   - al_math
   - al_comments

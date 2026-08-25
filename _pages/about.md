@@ -12,11 +12,11 @@ profile:
     <p>yixuanx [at] andrew.cmu.edu</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # social links are already displayed in the navbar
 
 announcements:
   enabled: true
-  scrollable: false
+  scrollable: true
   limit:
 
 latest_posts:

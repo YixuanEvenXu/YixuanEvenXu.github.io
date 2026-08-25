@@ -4,6 +4,10 @@
 
 @use "variables" as v;
 
+body {
+  font-family: Georgia, serif;
+}
+
 p,
 h1,
 h2,
@@ -19,12 +23,60 @@ strong {
   color: var(--global-text-color);
 }
 
-p,
-em,
-div,
-li,
-span {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Book Antiqua", Palatino, "Palatino Linotype", Georgia, serif;
+  font-weight: 700;
+}
+
+.navbar-brand.title,
+.publications .title {
+  font-family: "Book Antiqua", Palatino, "Palatino Linotype", Georgia, serif;
+}
+
+.navbar.navbar-light .navbar-brand.social {
+  align-items: center;
+  display: inline-flex;
+  gap: 0;
+
+  a[title="Email"] {
+    margin-right: 0.3rem;
+  }
+
+  a[title="WeChat QR code"],
+  a[title="Dblp url"] {
+    margin-right: 0.4rem;
+  }
+
+  a[title="Scholar userid"] {
+    margin-right: 0.5rem;
+  }
+
+  a[title="Linkedin username"],
+  a[title="X username"] {
+    margin-right: 0.1rem;
+  }
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+.post .profile .more-info {
   font-family: Georgia, serif;
+}
+
+.news .news-scroll-window {
+  overflow-y: auto;
+}
+
+.selected-publications-title {
+  margin-top: 0.8rem;
 }
 
 hr {

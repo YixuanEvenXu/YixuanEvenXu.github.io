@@ -62,8 +62,10 @@
           display: inline-flex;
           justify-content: center;
           margin-bottom: 0.5rem;
+          max-width: 7.5rem !important;
           min-height: 1.35rem;
           min-width: 7.5rem;
+          width: 7.5rem !important;
           padding-left: 1rem;
           padding-right: 1rem;
           text-align: center;
@@ -76,6 +78,10 @@
             &:hover {
               text-decoration: none;
             }
+          }
+
+          > div {
+            color: white;
           }
         }
 
@@ -197,6 +203,14 @@
     div.award.hidden.open {
       border-color: var(--global-highlight-color);
     }
+  }
+}
+
+@media (min-width: 576px) {
+  .publications ol.bibliography li > .row > .col-sm-8 {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+    padding-left: calc(15px + 0.5rem);
   }
 }
 
