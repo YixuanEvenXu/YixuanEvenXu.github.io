@@ -1,42 +1,97 @@
 "ArXiv Preprint":
   url: https://arxiv.org/
-  color: "#CBCBCB"
+  color: "#F1F3F5"
+  text_color: "#56606B"
+  border_color: "#D8DDE3"
+  dark_color: "#30343A"
+  dark_text_color: "#D6DADE"
+  dark_border_color: "#515862"
 
 "ESA 2023":
   url: https://www.dagstuhl.de/dagpub/978-3-95977-295-2
-  color: "#9EC6F3"
+  color: "#E0EFFD"
+  text_color: "#2F6AA2"
+  border_color: "#C0DDF6"
+  dark_color: "#243849"
+  dark_text_color: "#C8DFF2"
+  dark_border_color: "#3E607A"
 
 "NeurIPS 2023":
   url: https://neurips.cc/Conferences/2023
-  color: "#FA6868"
+  color: "#FEE4E1"
+  text_color: "#9F3236"
+  border_color: "#F9C2BE"
+  dark_color: "#4A2628"
+  dark_text_color: "#F4C4C2"
+  dark_border_color: "#7D3C40"
 
 "NeurIPS 2024":
   url: https://neurips.cc/Conferences/2024
-  color: "#FA6868"
+  color: "#FEE4E1"
+  text_color: "#9F3236"
+  border_color: "#F9C2BE"
+  dark_color: "#4A2628"
+  dark_text_color: "#F4C4C2"
+  dark_border_color: "#7D3C40"
 
 "NeurIPS 2025":
   url: https://neurips.cc/Conferences/2025
-  color: "#FA6868"
+  color: "#FEE4E1"
+  text_color: "#9F3236"
+  border_color: "#F9C2BE"
+  dark_color: "#4A2628"
+  dark_text_color: "#F4C4C2"
+  dark_border_color: "#7D3C40"
 
 "ICML 2026":
   url: https://icml.cc/Conferences/2026
-  color: "#FFA239"
+  color: "#FFEED4"
+  text_color: "#9E540A"
+  border_color: "#FBD7A2"
+  dark_color: "#4A321D"
+  dark_text_color: "#F3D3A3"
+  dark_border_color: "#7B5430"
 
 "AAAI 2024":
   url: https://aaai.org/conference/aaai/aaai-24/
-  color: "#A594F9"
+  color: "#ECE5FC"
+  text_color: "#5B41A2"
+  border_color: "#D7CAF6"
+  dark_color: "#332A4D"
+  dark_text_color: "#DCD3F4"
+  dark_border_color: "#554679"
 
 "AAAI 2025":
   url: https://aaai.org/conference/aaai/aaai-25/
-  color: "#A594F9"
+  color: "#ECE5FC"
+  text_color: "#5B41A2"
+  border_color: "#D7CAF6"
+  dark_color: "#332A4D"
+  dark_text_color: "#DCD3F4"
+  dark_border_color: "#554679"
 
 "WWW 2024":
   url: https://www2024.thewebconf.org/
-  color: "#FFBE98"
+  color: "#FEE7DC"
+  text_color: "#9E502E"
+  border_color: "#F8CDB9"
+  dark_color: "#482D25"
+  dark_text_color: "#F1CCBB"
+  dark_border_color: "#77503F"
 
 "TMLR 2026":
   url: https://jmlr.org/tmlr/
-  color: "#696FC7" 
+  color: "#E5E8FA"
+  text_color: "#4550A1"
+  border_color: "#C9CEF2"
+  dark_color: "#292E4C"
+  dark_text_color: "#D0D4F0"
+  dark_border_color: "#454D7A"
 
 "Workshop":
-  color: "#8DDFCB"
+  color: "#DEF7F0"
+  text_color: "#2C7766"
+  border_color: "#B7EBDD"
+  dark_color: "#243D37"
+  dark_text_color: "#C2E4DC"
+  dark_border_color: "#3D675D"

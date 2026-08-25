@@ -1,117 +1,117 @@
-"Bair":
+"bair":
   - firstname: ["Anna"]
     url: https://annaebair.github.io/
 
-"Cheng":
+"cheng":
   - firstname: ["Yu"]
     url: https://cs.brown.edu/people/ycheng79/
 
-"Conitzer":
+"conitzer":
   - firstname: ["Vincent"]
     url: https://www.cs.cmu.edu/~conitzer/
 
-"Davies":
+"davies":
   - firstname: ["Xander"]
     url: https://xanderdavies.com/
 
-"Fang":
+"fang":
   - firstname: ["Fei"]
     url: https://feifang.info/
 
-"Feng":
+"feng":
   - firstname: ["Zhe"]
     url: https://zfengharvard.github.io/
 
   - firstname: ["Zhili"]
     url: https://zhilif.github.io/
 
-"Finzi":
+"finzi":
   - firstname: ["Marc"]
     url: https://mfinzi.github.io/
 
-"Gal":
+"gal":
   - firstname: ["Yarin"]
     url: https://www.cs.ox.ac.uk/people/yarin.gal/website/
 
-"Goldstein":
+"goldstein":
   - firstname: ["Tom"]
     url: https://www.cs.umd.edu/~tomg/
 
-"Gravin":
+"gravin":
   - firstname: ["Nick", "Nikolai"]
     url: https://logic.pdmi.ras.ru/~gravin/
 
-"Jecmen":
+"jecmen":
   - firstname: ["Steven"]
     url: https://sjecmen.github.io/
 
-"Kirchenbauer":
+"kirchenbauer":
   - firstname: ["John"]
     url: https://www.cs.umd.edu/people/jkirchen
 
-"Kirk":
+"kirk":
   - firstname: ["Robert"]
     url: https://robertkirk.github.io/
 
-"Kolter":
+"kolter":
   - firstname: ["Zico", "J. Zico"]
     url: https://zicokolter.com/
 
-"Liang":
+"liang":
   - firstname: ["Jingxun"]
     url: https://sites.google.com/view/jingxun/home
 
-"Ling":
+"ling":
   - firstname: ["Chun Kai"]
     url: https://lingchunkai.github.io/
 
-"Maini":
+"maini":
   - firstname: ["Pratyush"]
     url: https://pratyushmaini.github.io/
 
-"Raghunathan":
+"raghunathan":
   - firstname: ["Aditi"]
     url: https://www.cs.cmu.edu/~aditirag/
 
-"Robey":
+"robey":
   - firstname: ["Alexander", "Alex"]
     url: https://arobey1.github.io/
 
-"Savani":
+"savani":
   - firstname: ["Yash"]
     url: https://yashsavani.com/
 
-"Schwarzschild":
+"schwarzschild":
   - firstname: ["Avi"]
     url: https://www.avischwarzschild.com/
 
-"Sun":
+"sun":
   - firstname: ["Mingjie"]
     url: https://eric-mingjie.github.io/
 
-"Tang":
+"tang":
   - firstname: ["Zhihao", "Zhihao Gavin"]
     url: http://zhihaotang.com/index.html
 
-"Trockman":
+"trockman":
   - firstname: ["Asher"]
     url: https://ashertrockman.com/
 
-"Wu":
+"wu":
   - firstname: ["Yufei"]
     url: https://github.com/YvonneWu10
 
-"Zhang":
+"zhang":
   - firstname: ["Yuhao"]
     url: https://jhc.sjtu.edu.cn/people/members/faculty/yuhao-zhang.html
 
   - firstname: ["Hanrui"]
     url: https://hanruizha.github.io/
 
-"Zhong":
+"zhong":
   - firstname: ["Ziqian"]
     url: https://fjzzq2002.github.io/
 
-"Zhou":
+"zhou":
   - firstname: ["Renfei"]
     url: https://orbitingflea.github.io/
