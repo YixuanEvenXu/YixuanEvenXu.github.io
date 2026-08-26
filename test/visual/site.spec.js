@@ -108,8 +108,13 @@ test("publication badges and dark mode", async ({ page }, testInfo) => {
   await expect(page.locator(".navbar-brand.title")).toHaveCount(0);
 
   const badges = page.locator("ol.bibliography .abbr abbr");
+  const bibSearch = page.locator("#bibsearch");
   await expect(badges.first()).toBeVisible();
   expect(await badges.count()).toBeGreaterThan(10);
+  await expect(bibSearch).toHaveCSS("background-color", "rgb(255, 255, 255)");
+  await expect(bibSearch).toHaveCSS("color", "rgb(0, 0, 0)");
+  await expect(bibSearch).toHaveCSS("border-top-color", "rgb(130, 130, 130)");
+  expect(await bibSearch.evaluate((input) => getComputedStyle(input, "::placeholder").color)).toBe("rgb(130, 130, 130)");
   const workshopBadge = page.locator("abbr", { hasText: "Workshop" }).first();
   await expect(workshopBadge).toHaveCSS("background-color", "rgb(222, 247, 240)");
   await expect(workshopBadge).toHaveCSS("color", "rgb(44, 119, 102)");
@@ -161,6 +166,10 @@ test("publication badges and dark mode", async ({ page }, testInfo) => {
   }
   await themeToggle.click();
   await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+  await expect(bibSearch).toHaveCSS("background-color", "rgb(33, 37, 41)");
+  await expect(bibSearch).toHaveCSS("color", "rgb(232, 232, 232)");
+  await expect(bibSearch).toHaveCSS("border-top-color", "rgb(130, 130, 130)");
+  expect(await bibSearch.evaluate((input) => getComputedStyle(input, "::placeholder").color)).toBe("rgb(130, 130, 130)");
   await expect(workshopBadge).toHaveCSS("background-color", "rgb(36, 61, 55)");
   await expect(workshopBadge).toHaveCSS("color", "rgb(194, 228, 220)");
   await expect(workshopBadge).toHaveCSS("border-top-color", "rgb(61, 103, 93)");

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Our team got 10th place in the 46th ICPC World Finals!
+title: Our team got 10th place in the 46th ICPC World Finals.
 date: 2024-04-18 08:00:00
 inline: false
 ---

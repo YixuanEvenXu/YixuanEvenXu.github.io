@@ -4,6 +4,22 @@
 
 @use "variables" as v;
 
+#bibsearch.bibsearch-form-input {
+  background: var(--global-card-bg-color);
+  border-color: var(--global-text-color-light);
+  caret-color: var(--global-text-color);
+  color: var(--global-text-color);
+
+  &::placeholder {
+    color: var(--global-text-color-light);
+    opacity: 1;
+  }
+
+  &:focus {
+    border-color: var(--global-theme-color) !important;
+  }
+}
+
 .publications {
   margin-top: 2rem;
 

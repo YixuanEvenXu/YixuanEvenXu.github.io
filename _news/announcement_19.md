@@ -1,6 +1,6 @@
 ---
 layout: post
-title: I have just graduated as an outstanding graduate!
+title: I have just graduated as an outstanding graduate.
 date: 2024-06-29 08:00:00
 inline: false
 ---
@@ -8,7 +8,7 @@ inline: false
 I have just graduated from Tsinghua University as an outstanding graduate.<br>
 Besides that, I am also honored to have given a speech at the commencement of IIIS.
 
-Take a look at the photos from my graduation season!
+Take a look at the photos from my graduation season.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-3 mt-md-0">
